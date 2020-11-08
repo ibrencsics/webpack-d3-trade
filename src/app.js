@@ -24,10 +24,10 @@ const chartOptions = new ChartOptions("#chartOptionsDiv", selectTimeframe, selec
 var stocksToWatch = ["KO", "TSLA", "AAPL", "FB", "GOOGL", "NFLX", "NIO", "MSFT", "MA", "V", "AXP", "BA", "XPEV", "INTC", "AMD", "BABA", "ZS", "WMT", "JPM"];
 createButtons("#stocks", d => selectStock(d), stocksToWatch);
 
-var stocksToWatch2 = ["ZNGA", "RYCEF"];
+var stocksToWatch2 = ["ZNGA", "RYCEF", "FSR", "SEDG", "FLSR", "JKS", "SE"]; // S92.DE
 createButtons("#stocks2", d => selectStock(d), stocksToWatch2);
 
-var cryptoToWatch = ["KRAKEN:XBTUSDT", "KRAKEN:XXBTZEUR", "KRAKEN:XXRPZEUR", "KRAKEN:XETHZEUR"];
+var cryptoToWatch = ["KRAKEN:XBTUSDT", "KRAKEN:XXBTZEUR", "KRAKEN:XXRPZEUR", "KRAKEN:XETHZEUR", "KRAKEN:XLTCZEUR", "BITFINEX:IOTUSD"];
 createButtons("#crypto", d => selectCrypto(d), cryptoToWatch);
 
 var forexToWatch = ["OANDA:EUR_USD", "OANDA:EUR_HUF", "OANDA:EUR_TRY"];
