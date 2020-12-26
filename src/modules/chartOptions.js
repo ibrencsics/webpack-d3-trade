@@ -10,7 +10,7 @@ export default class ChartOptions {
         this.startingDay = startingDay;
 
         this.renderTimeFrames();
-        this.renderChartTypes();
+        // this.renderChartTypes();
         // this.renderDataPicker();
     }
 

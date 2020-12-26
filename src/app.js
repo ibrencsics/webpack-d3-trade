@@ -23,10 +23,14 @@ const candleLoader = new CandleLoader("#chartDiv");
 const chartOptions = new ChartOptions("#chartOptionsDiv", selectTimeframe, selectChartType, startingDay);
 
 
-var stocksToWatch = ["KO", "TSLA", "AAPL", "FB", "GOOGL", "NFLX", "NIO", "MSFT", "MA", "V", "AXP", "BA", "XPEV", "INTC", "AMD", "BABA", "ZS", "WMT", "JPM", "FSR"];
+var stocksToWatch = [
+  "KO", "TSLA", "AAPL", "FB", "GOOGL", "NFLX", "NIO", "MSFT", "MA", "V", "AXP", "BA", "XPEV", "INTC", "AMD", "BABA", "ZS", "WMT", "JPM", "FSR",
+  "FCEL", "PLUG", "OKTA", "ROKU", "MGNI", "PLTR", "AI", "MRNA", "BNTX", "CSX", "JD", "SQ", "JKS", "JNJ", "PG", "LIN", "BLDP", "MNKD",
+  "OTEX", "PINS", "REGI", "SE", "SNOW", "SONO", "SPWR", "XLNX"
+];
 createButtons("#stocks", d => selectStock(d), stocksToWatch);
 
-var stocksToWatch2 = ["ZNGA", "RYCEF", "BRK-B", "SEDG", "FLSR", "JKS", "SE"]; // S92.DE
+var stocksToWatch2 = ["ZNGA", "RYCEF", "BRK-B", "SEDG", "FLSR"]; // S92.DE
 createButtons("#stocks2", d => selectStock(d), stocksToWatch2);
 
 var cryptoToWatch = [
