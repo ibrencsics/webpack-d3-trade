@@ -12,3 +12,13 @@ path.ema {
   fill: none;
 }
   
+button {
+  width: 10%;
+  color: black;
+  margin: 5px 5px;
+  padding: 10px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

@@ -11,7 +11,7 @@ export default class ChartOptions {
 
         this.renderTimeFrames();
         this.renderChartTypes();
-        this.renderDataPicker();
+        // this.renderDataPicker();
     }
 
     renderTimeFrames() {
@@ -19,6 +19,8 @@ export default class ChartOptions {
             {"label": "1d", "days": 1, "resolution": "5"}, 
             {"label": "1w", "days": 7, "resolution": "30"},
             {"label": "1m", "days": 30, "resolution": "60"},
+            {"label": "3m", "days": 90, "resolution": "D"},
+            {"label": "6m", "days": 366/2, "resolution": "D"},
             {"label": "1y", "days": 365, "resolution": "D"},
             {"label": "5y", "days": 5*365, "resolution": "W"},
             {"label": "20y", "days": 20*365, "resolution": "M"},

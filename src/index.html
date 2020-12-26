@@ -37,9 +37,9 @@
       </ul>
     </nav>
 
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
       <div class="row">
-        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <nav id="sidebarMenu" class="col-md-1 col-lg-2 d-md-block bg-light sidebar collapse">
           <div class="sidebar-sticky pt-3">
             <ul class="nav flex-column">
               <li class="nav-item">
@@ -66,16 +66,16 @@
                   Forex
                 </a>
               </li>
-            </ul>
+            </ul> -->
 
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <!-- <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
               <span>Chart options</span>
               <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
                 <span data-feather="plus-circle"></span>
               </a>
-            </h6>
+            </h6> -->
 
-            <div id="chartOptionsDiv">
+            <!-- <div id="chartOptionsDiv">
               <form id="chartOptionsTimeFrames" class="form-inline"></form>
 
               <form id="chartType" class="form-inline">
@@ -90,7 +90,7 @@
               </form>
           
               <div id="chartTypeDatePicker" style="height: 10px; width: 60px"></div>
-            </div>
+            </div> -->
 
             <!-- <div id="timeFrames" class="control-group"></div> -->
             <!-- <form id="form">
@@ -98,28 +98,46 @@
               <input type="radio" name="chartType" value="candle" >candle<br>
             </form> -->
             
-          </div>
-        </nav>
+          <!-- </div>
+        </nav> -->
 
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <main role="main" class="col-md-12 ml-sm-auto col-lg-12 px-md-12">
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
             <h1 class="h2">Dashboard</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
-              <div class="btn-group mr-2">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+              
+              <div id="chartOptionsDiv">
+                <form id="chartOptionsTimeFrames" class="form-inline"></form>
+  
+                <form id="chartType" class="form-inline">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="chartTypeOptions" id="chartTypeArea" value="area" checked>
+                    <label class="form-check-label" for="chartTypeArea">Area</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="chartTypeOptions" id="charTypeCandle" value="candle">
+                    <label class="form-check-label" for="charTypeCandle">Candle</label>
+                  </div>
+                </form>
+            
+                <!-- <div id="chartTypeDatePicker" style="height: 10px; width: 60px"></div> -->
               </div>
-              <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+
+              <div class="btn-group mr-2">
+                <button id="refresh" type="button" class="btn btn-sm btn-outline-secondary">Refresh</button>
+              </div>
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
                 <span data-feather="calendar"></span>
                 This week
-              </button>
+              </button> -->
             </div>
           </div>
 
           <div id="selected">
             <p></p>
           </div>
-          <div id="chartDiv" style="height: 500px; width: 1500px"></div>
+          <!-- <div id="chartDiv" style="height: 500px; width: 1500px"></div> -->
+          <div id="chartDiv" style="height: 500px"></div>
           <div id="stocks" class="control-group"></div>
           <div id="stocks2" class="control-group"></div>
           <div id="crypto" class="control-group"></div>
