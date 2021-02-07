@@ -26,11 +26,13 @@ const chartOptions = new ChartOptions("#chartOptionsDiv", selectTimeframe, selec
 var stocksToWatch = [
   "KO", "TSLA", "AAPL", "FB", "GOOGL", "NFLX", "NIO", "MSFT", "MA", "V", "AXP", "BA", "XPEV", "INTC", "AMD", "BABA", "ZS", "WMT", "JPM", "FSR",
   "FCEL", "PLUG", "OKTA", "ROKU", "MGNI", "PLTR", "AI", "MRNA", "BNTX", "CSX", "JD", "SQ", "JKS", "JNJ", "PG", "LIN", "BLDP", "MNKD",
-  "OTEX", "PINS", "REGI", "SE", "SNOW", "SONO", "SPWR", "XLNX"
+  "OTEX", "PINS", "REGI", "SE", "SNOW", "SONO", "SPWR", "XLNX", "LMND", "TRUP", "TDOC", "BE", "SPCE", "PYPL", "CRWD", "ETSY"
 ];
 createButtons("#stocks", d => selectStock(d), stocksToWatch);
 
-var stocksToWatch2 = ["ZNGA", "RYCEF", "BRK-B", "SEDG", "FLSR"]; // S92.DE
+var stocksToWatch2 = [
+  "ZNGA", "RYCEF", "BRK-B", "SEDG", "FLSR", "CRLBF", "IRBT", "PFE", "PTON", "ALT", "ISRG", "ADYEY", "FSLY", "SPOT", "DIS", "MDB", "BYND"
+]; // S92.DE
 createButtons("#stocks2", d => selectStock(d), stocksToWatch2);
 
 var cryptoToWatch = [
@@ -39,6 +41,9 @@ var cryptoToWatch = [
   {symbol:"KRAKEN:XXRPZEUR", label:"XXRPZEUR"}, 
   {symbol:"KRAKEN:XETHZEUR", label:"XETHZEUR"}, 
   {symbol:"KRAKEN:XLTCZEUR", label:"XLTCZEUR"}, 
+  {symbol:"KRAKEN:XDGEUR", label:"XDGEUR"}, 
+  {symbol:"KRAKEN:ADAEUR", label:"ADAEUR"}, 
+  {symbol:"KRAKEN:DOTEUR", label:"DOTEUR"}, 
   {symbol:"BITFINEX:IOTUSD", label:"IOTUSD"}
 ];
 createButtons("#crypto", d => selectCrypto(d), cryptoToWatch);
@@ -50,7 +55,7 @@ var forexToWatch = [
 ];
 createButtons("#forex", d => selectForex(d), forexToWatch);
 
-selectStock("KRAKEN:XXBTZEUR");
+//selectStock("KRAKEN:XXBTZEUR");
 d3.select("button#refresh").on("click", d => refresh());
 
 
